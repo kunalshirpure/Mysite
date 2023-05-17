@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="C:\Users\IET\Desktop\jquery-3.6.4.min.js"></script>
+        <script>
+          $(document).ready(()=>{
+            $("#i1").click(()=>{
+                $("#p1").text("hello")
+
+            })
+            $("#i2").click(()=>{
+                $("#p2").html("<i>hello</i>")
+
+            })
+           $("#i3").click(()=>{
+            $("#p3").html("<u>hello</u>")
+           }) 
+
+          })
+        </script>
+    </head>
+    <body>
+        <button id="i1">OK</button>
+        <button id="i2">Italic</button>
+        <button id="i3">Underline</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+    </body>
+</html>

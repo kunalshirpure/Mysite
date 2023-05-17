@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script> 
+      function Age()
+      {
+        let v= new Date(document.getElementById("i1").value)
+        document.getElementById("p1").innerHTML=(new Date()-v)/(1000*60*60*24*365)
+      }
+
+
+        </script>
+    </head>
+    <body>
+        <p>Enter your birthdate to calculate your age</p>
+ <input type="date" id="i1" onchange="Age()"/>
+ <p id="p1"></p>
+
+    </body>
+</html>

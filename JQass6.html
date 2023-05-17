@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $().ready(()=>{
+                $("button").click(()=>{
+                    $("#d1").fadeOut(1000)
+                    $("#d2").fadeIn("slow")
+                    $("#d3").fadeOut(1222)
+
+                })
+                 $("#div4").slideUp(2000)
+            })
+
+        </script>
+    </head>
+    <body>
+        <p>this is a fadeOut and fadein</p>
+        <button>click me</button>
+        <div id="div4" style="width:80px;height:80px;">
+            shubham 
+          </div>
+        <div id="d1" style="width:80px;height:80px;background-color:rgb(255, 0, 195);"></div><br>
+
+        <div id="d2" style=" background: #110705;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;"></div><br>
+       <br> <div id="d3" style="
+        
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            transform-origin: center;
+            position: relative;
+            background: rgb(0, 255, 64);
+            margin: 100px auto;
+            align-items: center;
+        text-align: center;"></div>
+            
+        
+    </body>
+</html>

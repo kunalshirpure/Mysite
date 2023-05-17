@@ -1,0 +1,24 @@
+<html>
+    <head>
+        
+        <script>
+            let v=[ "sunday","monday","tuesday","wednesday","thursday","friday","saturday"]   
+    function month()
+    {
+      let s=new Date(document.getElementById("i1").value)
+     // document.getElementById("p1").innerHTML=v[(new Date(new Date().getUTCFullYear(),s.getMonth(),s.getDate())),s.getDay()]
+    let p=new Date()
+    let month=s.getMonth()+1
+    let dat=s.getDate()    
+    let year=p.getFullYear()
+    let newDate=new Date(`${year}-${month}-${dat}`)
+    document.getElementById("p1").innerHTML=v[newDate.getDay()]
+        }
+        </script>
+    </head>
+    <body>
+        <p>enter your birth date to tell your birth day</p>
+        <input type="date" onchange="month()" id="i1"/>
+        <p id="p1"></p>
+    </body>
+</html>

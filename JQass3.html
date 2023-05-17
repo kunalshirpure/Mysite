@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="C:\Users\IET\Desktop\jquery-3.6.4.min.js"></script>
+        <script>
+        $().ready(function(){
+            $("#b1").click(function(){
+                let num=parseInt($("#p1").val())
+                let from=parseInt($("#p2").val())
+                let to=parseInt($("#p3").val())
+                for(let x=from;x<=to;x++)
+                {
+                    $("#i1").append(`<tr><td>${num}*${x}</td><td>${num*x}</td> </tr>`)
+                }
+
+            })
+
+        })
+
+
+        </script>
+    </head>
+    <body>
+        
+        <br>num:<input type="number" name="num" id="p1"/><br>
+       <br> from:<input type="number" name="num" id="p2"/><br>
+       <br> to:<input type="number" name="num" id="p3"/><br>
+       <br> <button id="b1">Calculate</button>
+
+       <br> <table  border=1px id="i1">
+           
+        </table>
+    </body> 
+</html> 

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            div{
+                position: absolute;
+                background-color: yellowgreen;
+                color: tomato;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $().ready(()=>{
+                $('button').click(()=>{
+                    for(let x=1;x<=4;x++)
+                    {
+                        $('div').animate({left:"50% "},"5000");
+                    $('div').animate({left:"0"},"5000");
+
+                    }
+                   
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <button>Start</button>
+        <div>WELCOME TO PUNE</div>
+    </body>
+</html>

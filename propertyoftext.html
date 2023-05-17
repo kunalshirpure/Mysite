@@ -1,0 +1,21 @@
+<html>
+    <script>
+        
+          var nam=document.getElementById("a1").value;
+          var ag=document.getElementById("a2").value;
+          var ci=document.getElementById("a3").value;
+
+          var obj={name:"nam",age:"ag",city:"ci"}
+          for(x in obj)
+           {
+              console.log(obj.x);
+           }
+
+    </script>
+    <body>
+        <input type="name" id="a1">
+        <input type="age" id="a2">
+        <input type="city" id="a3">
+        <button onclick="f1()" id="a4">Show Properties</button>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $().ready(()=>{
+                $("#i1").click(()=>{
+               let s=$("#i1").data("line")
+               let str=$("#i1").text()
+               let finalpart=""
+               let length=str.length
+               let a=0
+               let b=length/s
+               for(var i=0;i<=s;i++)
+               {
+                  let part=str.slice(a,b)
+                  finalpart=finalpart.concat(part+"<br>")
+                  a=b
+                  b=b+length/s
+               }
+                 $("p").html(finalpart)
+            })
+               $("#button").click(()=>{
+                let y=$("#i1").data("line")
+                $("#i1").data("line",y+1)
+
+               })   
+            })
+            
+
+        </script>
+    </head>
+    <body>
+        <div id="i1" data-line="2">
+        this is some data which I want to split and divide in many lines this is a huge text . It is important to revise the concepts. regular revision is compulsary for winners.
+    </div>
+        <button>click</button>
+        <p></p>
+
+    </body>
+</html>

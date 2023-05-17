@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            let arr=[]
+     function f1(){
+        let e1=document.getElementById("i1")
+        let name=e1.value
+        let e2=document.getElementById("i2")
+        let age=e2.value
+        arr.push({personName:name,personAge:age})
+        console.log(arr)
+     }
+     function f2()
+     {
+       let str =" text-"
+       for(x of arr)
+       {
+        str=str.concat(x.personName,",",x.personAge)
+       }
+      document.getElementById("p1").innerText=str
+     }
+
+    </script>
+    </head>
+    <body>
+        <pre>
+<lable for="i1">Enter Name</lable><input type="text" id="i1"/>
+<lable for="i2">Enter Age</lable><input type="number" id="i2"/>
+<input type="button" value="ok" onclick="f1()"/>
+<input type="button" value="show" onclick="f2()"/>
+<p id="p1"></p>
+</pre>
+    </body>
+
+</html>

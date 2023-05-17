@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="C:\Users\IET\Desktop\jquery-3.6.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    let num=parseInt($("#i1").val())
+                    let fact=1
+                for(let x=1;x<=num;x++){
+                    fact=fact*x
+
+                }
+                $("#p1").text(fact)
+
+            })
+        })
+
+        </script>
+    </head>
+    <body bgcolor="lightskyblue">
+
+    </body>
+    <pre>
+    <label>Enter a number:</label><input type="number" placeholder="Enter a number" id="i1"/>
+    <button id="b1">Factorial</button>
+     <p id="p1"></p>   
+</pre>
+</html>

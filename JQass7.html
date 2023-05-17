@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .i1{ width: 400px;
+        background: #8ccdf0;
+        border: 1px solid #a29415;
+            }
+             .i1-inner{
+                padding:50px;
+             }
+
+            
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+      $().ready(()=>{
+        $("#d1").click(()=>
+        {
+          $(".i1").slideUp()
+        })
+        $("#d2").click(()=>
+        {
+        $(".i1").slideDown()
+        })
+
+      })
+
+        </script>
+        <body>
+      <button id="d1">Slide-Up</button>
+      <button id="d2">Slide-down</button>
+      <hr>
+      <div class="i1">
+      <div class="i1-inner"><p>Web Programming Technology</p></div>
+    </div>
+        </body>
+    </head>
+</html>

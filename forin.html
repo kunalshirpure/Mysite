@@ -1,0 +1,51 @@
+<!In HTML show a textfield and button. On button click show all the property
+names of the textfield element using for in  >
+<!DOCTYPE html>
+<html >
+<head>
+    <script>
+        let arr=[]
+        function f1(){
+        let elm=document.getElementById("i1").value
+        //let name=elm.value
+        let elm1=document.getElementById("i2").value
+       // let cost=elm1.value
+         arr.push({pName:elm,pCost:elm1})
+         console.log(arr)
+        }
+        /*function f2()
+        {
+            
+            let x
+            for(x in arr )
+            {
+                console.log(x,"=",arr[x])
+            }
+            document.getElementById("p2").innerHTML=arr[x]
+        }
+        */
+       function f2(){
+      let txbx=document.getElementById("i2")
+      let str=" "
+      for(key in txbx){
+      str=str.concat(txbx[key],"\n")
+      console.log(txbx[key],key)
+       }
+
+       document.getElementById("p2").innerText=str
+       }
+
+
+    </script>
+   
+</head>
+<body>
+    <label ><b>Enter Name:</b></label><input type="text" value="name" id="i1"/><br>
+    <br>
+    <label><b>Enter Cost:</b></label><input type="number" value="cost" id="i2"/><br>
+    <br>
+    <input type="button" value="Ok" onclick="f1()" />
+    <input type="button" value="Show" onclick="f2()"/>
+    <p id="p2"></p>
+</body>
+
